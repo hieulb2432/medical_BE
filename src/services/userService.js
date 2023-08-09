@@ -264,9 +264,9 @@ let getFilterUser = (role) => {
             let roleUser = []
             if(role === 'ALL'){
               roleUser = await db.User.findAll({
-                attributes: {
-                  exclude: ['password', 'image'],
-                },
+                // attributes: {
+                //   exclude: ['password', 'image'],
+                // },
                 include: [
                   {
                     model: db.Allcode,
