@@ -24,12 +24,10 @@ module.exports = (sequelize, DataTypes) => {
     diagnostic: DataTypes.STRING,
     drugId: DataTypes.STRING,
     quantity: DataTypes.TEXT('long'),
-    // note: DataTypes.STRING,
     doctorAdvice: DataTypes.STRING,
     timeType: DataTypes.STRING,
     date: DataTypes.STRING,
     bookingId: DataTypes.INTEGER,
-    // order: DataTypes.STRING, 
   }, {
     sequelize,
     modelName: 'Prescription',
